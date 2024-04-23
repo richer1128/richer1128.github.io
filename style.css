@@ -1,0 +1,108 @@
+* {
+  padding: 0;
+  margin: 0;
+  background-color: rgb(251, 249, 239)!important;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+@media (max-width: 390px) {
+  .dingChen {
+    position: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(251, 249, 239);
+    overflow: auto;
+  }
+
+  .narverBar {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+  }
+  h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+ 
+  .iphonef {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+  }
+  .logo {
+    /* 請根據您的需求調整 right 屬性值 */
+    padding-right: 55px;
+    margin-right: 20px;
+  }
+
+  .server {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .narverBar .server label {
+    font-size: 14px;
+    /* 調整文字大小 */
+  }
+
+  h1 {
+    color: #ECB1AC;
+  }
+
+  .aboutUs label {
+    color: #ECB1AC;
+  }
+
+  .turn .software {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: auto;
+
+  }
+  .lineA {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: auto;
+
+  }
+}
+
+@media (max-width: 992px) {
+  .ScaffoldTablet {
+    position: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1400px) {
+  .ScaffoldDesktop {
+    position: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
