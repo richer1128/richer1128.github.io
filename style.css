@@ -1,42 +1,74 @@
 * {
   padding: 0;
   margin: 0;
-  background-color: rgb(251, 249, 239)!important;
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Noto Sans HK", sans-serif;
+  font-optical-sizing: auto;
+
+
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+/* .lobster-regular {
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+} */
+
+label {
+  font-family: "Lobster", sans-serif;
+}
 
 @media (max-width: 390px) {
   .dingChen {
+
+    display: flex;
     position: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;
     height: 100vh;
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(251, 249, 239);
     overflow: auto;
+    flex-direction: column;
+    background-image: url(/assets/Images/bg2.png);
+    background-color: rgba(0, 0, 0, 0);
+    background-position: -200px center;
   }
 
   .narverBar {
     display: flex;
-    justify-content: end;
+    justify-content: center;
     align-items: center;
 
   }
-  h2{
+
+  p {
+    text-align: center;
+  }
+
+  .server {
+    /* color: #ECB1AC; */
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    font-size: 20px;
+width: 100%;
+
+  }
+
+  h2 {
     display: flex;
     justify-content: center;
     align-items: center;
   }
- 
+
   .iphonef {
     display: flex;
     justify-content: space-around;
     align-items: center;
-
   }
+
   .logo {
     /* 請根據您的需求調整 right 屬性值 */
     padding-right: 55px;
@@ -50,17 +82,12 @@
 
   }
 
-  .narverBar .server label {
-    font-size: 14px;
-    /* 調整文字大小 */
-  }
-
   h1 {
-    color: #ECB1AC;
+    /* color: #ECB1AC; */
   }
 
   .aboutUs label {
-    color: #ECB1AC;
+    /* color: #ECB1AC; */
   }
 
   .turn .software {
@@ -70,6 +97,7 @@
     width: auto;
 
   }
+
   .lineA {
     display: flex;
     justify-content: space-around;
