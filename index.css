@@ -312,3 +312,39 @@ body {
     transform: rotateY(0deg);
   }
 }
+
+@media (max-width: 767px) {
+  .logo img {
+    max-width: 200px;
+  }
+
+  .server h1 {
+    font-size: 1.2rem;
+  }
+
+  .software img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .imgBox {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .imgBox img {
+    max-height: 150px;
+  }
+
+  .advertise img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+}
