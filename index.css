@@ -183,7 +183,10 @@ body {
   transform-style: preserve-3d;
 }
 
-
+#drag-container,
+#spin-container {
+  touch-action: none;
+}
 
 #drag-container,
 #spin-container {
