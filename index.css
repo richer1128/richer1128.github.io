@@ -1,0 +1,311 @@
+.selector-for-some-widget {
+  box-sizing: content-box;
+}
+
+* {
+  background-image: url(/assets/Images/bg2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  /* width: 100%;
+    height: 100%; */
+  margin: 0;
+  padding: 0;
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Noto Sans HK", sans-serif;
+  font-optical-sizing: auto;
+
+}
+
+.DingCheN {
+  overflow: scroll;
+
+}
+
+h1 {
+  font-family: 'Pacifico';
+  color: white;
+  animation: neon 1s infinite;
+}
+
+.logo img {
+  width: 100%;
+  /* 讓圖片寬度填滿容器 */
+  max-width: 390px;
+  /* 設定最大寬度 */
+  height: auto;
+  /* 讓高度自適應 */
+  margin: 0 auto;
+  /* 使用 margin 屬性來水平置中 */
+}
+
+@keyframes neon {
+
+  0%,
+  39%,
+  41%,
+  59%,
+  61%,
+  100% {
+    text-shadow: white 0 0 12px,
+      #ff3aad 0 0 24px,
+      #ff3aad 0 0 36px,
+  }
+
+  40%,
+  60% {
+    text-shadow: none;
+  }
+}
+
+/* @keyframes clipPath {
+    0% {
+        clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 0%);
+        scale: 1;
+    }
+
+    100% {
+        clip-path: polygon(10% 10%, 10% 90%, 90% 90%, 90% 10%);
+        scale: 1.2;
+    }
+} */
+
+.software img {
+  filter: drop-shadow(10px 10px 10px rgb(0 0 0 / 0.5));
+  object-fit: cover;
+  border-radius: 30px;
+  /* animation: clipPath 5s forwards ease-in-out; */
+}
+
+/* LINE */
+.lineBox {
+  width: 100vw;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f7f7;
+  gap: 20px;
+}
+
+.imgBox {
+  display: flex;
+  gap: 20px;
+  box-shadow: 0 3px 10px 0 rgba(0 0 0 / 0.1);
+  border-radius: 5px;
+  padding: 20px;
+  width: 640px;
+  position: relative;
+  scroll-behavior: smooth;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+  scroll-padding: 20px;
+
+}
+
+.imgBox img {
+  border-radius: 4px;
+  max-height: 300px;
+  width: auto;
+  filter: drop-shadow(10px 10px 10px rgb(0 0 0 / 0.5));
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
+
+}
+
+/* ADbox */
+.lineBox {
+  width: 100vw;
+  /* min-height: 100vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f7f7;
+  gap: 20px;
+}
+
+.imgBox {
+  display: flex;
+  gap: 20px;
+  box-shadow: 0 3px 10px 0 rgba(0 0 0 / 0.1);
+  border-radius: 5px;
+  padding: 20px;
+  width: 640px;
+  position: relative;
+  scroll-behavior: smooth;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+  scroll-padding: 20px;
+
+}
+
+.imgBox img {
+  border-radius: 4px;
+  max-height: 300px;
+  width: auto;
+  filter: drop-shadow(10px 10px 10px rgb(0 0 0 / 0.5));
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
+}
+
+/* advertise */
+.advertise img {
+  filter: drop-shadow(10px 10px 10px rgb(0 0 0 / 0.5));
+  object-fit: cover;
+  border-radius: 30px;
+  /* animation: clipPath 5s forwards ease-in-out; */
+}
+
+/* pictures */
+
+html,
+body {
+  height: 100%;
+
+  /* for touch screen */
+  touch-action: none;
+}
+
+body {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #111;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+
+
+#drag-container,
+#spin-container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform: rotateX(-10deg);
+  transform: rotateX(-10deg);
+  background-image: none;
+  /* 移除背景圖片 */
+  background-color: rgba(0, 0, 0, 0);
+  /* 設置透明的背景顏色 */
+  width: 100%;
+  height: 300px;
+}
+
+#drag-container img,
+#drag-container video {
+  background-image: none;
+  /* 移除背景圖片 */
+  background-color: rgba(0, 0, 0, 0);
+  /* 設置透明的背景顏色 */
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  line-height: 200px;
+  font-size: 50px;
+  text-align: center;
+  -webkit-box-shadow: 0 0 8px #fff;
+  box-shadow: 0 0 8px #fff;
+  -webkit-box-reflect: below 10px linear-gradient(transparent, transparent, #0005);
+}
+
+#drag-container img:hover,
+#drag-container video:hover {
+  -webkit-box-shadow: 0 0 15px #fffd;
+  box-shadow: 0 0 15px #fffd;
+  -webkit-box-reflect: below 10px linear-gradient(transparent, transparent, #0007);
+}
+
+#drag-container p {
+  font-family: Serif;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotateX(90deg);
+  transform: translate(-50%, -50%) rotateX(90deg);
+  color: #fff;
+}
+
+#ground {
+  width: 900px;
+  height: 900px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotateX(90deg);
+  transform: translate(-50%, -50%) rotateX(90deg);
+  background: -webkit-radial-gradient(center center,
+      farthest-side,
+      #9993,
+      transparent);
+}
+
+#music-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+
+  to {
+    -webkit-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+
+  to {
+    -webkit-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+  }
+}
+
+@-webkit-keyframes spinRevert {
+  from {
+    -webkit-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+  }
+
+  to {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+}
+
+@keyframes spinRevert {
+  from {
+    -webkit-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+  }
+
+  to {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+}
