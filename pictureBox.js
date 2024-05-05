@@ -1,15 +1,22 @@
-document.addEventListener("DOMContentLoaded", function() {
-    // 等待DOM加載完成後執行
-  
-    // 獲取第一張圖片元素
-    const firstImage = document.getElementById("firstImage");
+const handleScroll = () => {
+  const lineBox = document.querySelector('.lineBox');
+  const boxPosition = lineBox.getBoundingClientRect().top;
+  const windowHeight = window.innerHeight;
+  const imgBox = lineBox.querySelector('.imgBox');
+  const firstImg = imgBox.querySelector('img:first-child');
+  const otherImgs = imgBox.querySelectorAll('img:not(:first-child)');
 
-      // 獲取LOGO元素
-      const logo = document.querySelector('.logo');
-  
-      // 滾動到LOGO元素
-      window.scrollTo({
-          top: logo.offsetTop,
-          behavior: 'smooth'
-      });
-  });
+  if (boxPosition < windowHeight) {
+    // 隱藏其他圖片
+    otherImgs.forEach(img => img.style.display = 'none');
+
+    // 顯示第一張圖片在第一個位置
+    firstImg.style.display = 'block';
+  } else {
+    // 顯示其他圖片
+    otherImgs.forEach(img => img.style.display = 'block');
+
+    // 隱藏第一張圖片
+    firstImg.style.display = 'none';
+  }
+};
