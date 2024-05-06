@@ -19,7 +19,44 @@
   font-optical-sizing: auto;
 
 }
+body {
+  margin: 0;
+  padding: 0;
+}
 
+::-webkit-scrollbar {
+  width: 1px;
+}
+
+::-webkit-scrollbar-button {
+
+  background: transparent;
+
+  border-radius: 4px;
+
+}
+
+::-webkit-scrollbar-track-piece {
+
+  background: transparent;
+
+}
+
+::-webkit-scrollbar-thumb {
+
+  border-radius: 4px;
+
+  background-color: rgba(236, 177, 172, 0.4);
+
+  border: 1px solid slategrey;
+
+}
+
+::-webkit-scrollbar-track {
+
+  box-shadow: transparent;
+
+}
 .DingCheN {
   overflow: scroll;
  
@@ -166,7 +203,6 @@ h1 {
 html,
 body {
   height: 100%;
-
   /* for touch screen */
   touch-action: none;
 }
