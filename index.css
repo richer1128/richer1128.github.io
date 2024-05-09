@@ -3,14 +3,12 @@
 }
 
 * {
-  /* background-image: url(/assets/Images/bg2.webp); */
+
   background: #000;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-  /* width: 100%;
-    height: 100%; */
   margin: 0;
   padding: 0;
   font-family: "Lobster", sans-serif;
@@ -20,16 +18,17 @@
   font-optical-sizing: auto;
 
 }
+
 body {
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  overflow-X: hidden;
   touch-action: none;
 }
-
+ 
 ::-webkit-scrollbar {
-  width: 1px;
-  height: 1px;
+  display: none;
+  /* 隱藏捲動條 */
 }
 
 ::-webkit-scrollbar-button {
@@ -61,14 +60,17 @@ body {
   box-shadow: transparent;
 
 }
+
 .DingCheN {
-   position: fixed;
+  position: fixed;
   width: 100%;
   top: 0;
   left: 0;
-  overflow-y: auto; /* 如果內容高度超出視窗高度，允許垂直滾動 */
+  overflow-y: auto;
+  /* 如果內容高度超出視窗高度，允許垂直滾動 */
   height: 100vh;
-  -webkit-overflow-scrolling: touch; /* 啟用滾動優化 */
+  -webkit-overflow-scrolling: touch;
+  /* 啟用滾動優化 */
 }
 
 h1 {
@@ -78,6 +80,7 @@ h1 {
 }
 
 @keyframes neon {
+
   0%,
   39%,
   41%,
@@ -88,6 +91,7 @@ h1 {
       0 0 24px #ff3aad,
       0 0 36px #ff3aad;
   }
+
   40%,
   60% {
     text-shadow: none;
@@ -104,7 +108,8 @@ h1 {
   margin: 0 auto;
   /* 使用 margin 屬性來水平置中 */
 }
-.software{
+
+.software {
   margin-top: 20px;
 }
 
@@ -135,14 +140,14 @@ h1 {
   position: relative;
   scroll-behavior: smooth;
   overflow-x: auto;
-  -webkit-overflow-scrolling: touch; /* 添加這行 */
-  scroll-snap-type: x mandatory; /* 添加這行 */
+  -webkit-overflow-scrolling: touch;
+
+  scroll-snap-type: x mandatory;
+
   scroll-padding: 1rem;
 }
 
-::-webkit-scrollbar {
-  display: none; /* 隱藏捲動條 */
-}
+
 
 .imgBox img {
   border-radius: 4px;
@@ -153,8 +158,10 @@ h1 {
   scroll-snap-stop: always;
   scroll-snap-align: center;
   flex: 0 0 auto;
-  width: 80vw; /* 調整圖片寬度以適應手機螢幕 */
-  max-width: 400px; /* 設置最大寬度 */
+  width: 80vw;
+  /* 調整圖片寬度以適應手機螢幕 */
+  max-width: 400px;
+  /* 設置最大寬度 */
   height: auto;
 }
 
@@ -220,7 +227,7 @@ body {
   perspective: 1000px;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
- 
+
 }
 
 #drag-container,
@@ -247,9 +254,9 @@ body {
   height: 300px;
   margin-top: 50px;
   margin-bottom: 100px;
-  
+
 }
- 
+
 #drag-container img,
 #drag-container video {
   background-image: none;
@@ -270,7 +277,7 @@ body {
   -webkit-box-shadow: 0 0 10px #fff;
   box-shadow: 0 0 10px #fff;
   -webkit-box-reflect: below 10px linear-gradient(transparent, transparent, #0005);
- 
+
 }
 
 #drag-container img:hover,
@@ -302,7 +309,7 @@ body {
       farthest-side,
       #9993,
       transparent);
-       
+
 }
 
 #music-container {
@@ -363,9 +370,12 @@ body {
   .logo img {
     max-width: 200px;
   }
+
   #drag-container img {
-    max-width: 300px; /* 在手機上縮小圖片 */
+    max-width: 300px;
+    /* 在手機上縮小圖片 */
   }
+
   .server h1 {
     font-size: 1.2rem;
     word-break: break-word;
