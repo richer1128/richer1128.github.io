@@ -135,7 +135,8 @@ h1 {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch; /* 添加這行 */
   scroll-snap-type: x mandatory; /* 添加這行 */
-  scroll-padding: 20px;
+  
+  scroll-padding: 1rem;
 }
 
 
@@ -147,7 +148,11 @@ h1 {
   filter: drop-shadow(10px 10px 10px rgb(0 0 0 / 0.5));
   scroll-snap-align: center;
   scroll-snap-stop: always;
-
+  scroll-snap-align: center;
+  flex: 0 0 auto;
+  width: 80vw; /* 調整圖片寬度以適應手機螢幕 */
+  max-width: 400px; /* 設置最大寬度 */
+  height: auto;
 }
 
 /* ADbox */
@@ -254,7 +259,8 @@ body {
   left: 0;
   top: 0;
   width: 100%;
-  height: 100%;
+  max-width: 400px;
+  height: auto;
   line-height: 200px;
   font-size: 50px;
   text-align: center;
@@ -354,7 +360,9 @@ body {
   .logo img {
     max-width: 200px;
   }
-
+  #drag-container img {
+    max-width: 300px; /* 在手機上縮小圖片 */
+  }
   .server h1 {
     font-size: 1.2rem;
     word-break: break-word;
