@@ -3,7 +3,8 @@
 }
 
 * {
-  background-image: url(/assets/Images/bg2.webp);
+  /* background-image: url(/assets/Images/bg2.webp); */
+  background: #000;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -59,9 +60,7 @@ body {
 
 }
 .DingCheN {
-  overflow: scroll;
- 
-  position: fixed;
+   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
@@ -69,28 +68,6 @@ body {
   height: 100vh; 
 }
 
-/* h1 {
-  font-family: 'Pacifico';
-  color: white;
-  animation: neon 1s infinite;
-}
-
-@keyframes neon {
-  0%,
-  39%,
-  41%,
-  59%,
-  61%,
-  100% {
-    text-shadow: white 0 0 12px,
-      #ff3aad 0 0 24px,
-      #ff3aad 0 0 36px,
-  }
-  40%,
-  60% {
-    text-shadow: none;
-  }
-} */
 h1 {
   font-family: 'Pacifico';
   color: white;
@@ -143,7 +120,7 @@ h1 {
   gap: 15px;
 }
 
-.imgBox {
+/* .imgBox {
   display: flex;
  
   box-shadow: 0 3px 10px 0 rgba(0 0 0 / 0.1);
@@ -156,8 +133,29 @@ h1 {
   -webkit-overflow-scrolling: touch;
   scroll-snap-type: x mandatory;
   scroll-padding: 20px;
-
+  -webkit-overflow-scrolling: touch; 
+  scroll-snap-type: x mandatory;  
+} */
+.imgBox {
+  display: flex;
+  gap: 15px;
+  box-shadow: 0 3px 10px 0 rgba(0 0 0 / 0.1);
+  border-radius: 5px;
+  padding: 20px;
+  width: 640px;
+  position: relative;
+  scroll-behavior: smooth;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch; /* 添加這行 */
+  scroll-snap-type: x mandatory; /* 添加這行 */
+  scroll-padding: 20px;
 }
+
+
+
+
+
+
 
 .imgBox img {
   border-radius: 4px;
@@ -193,7 +191,6 @@ h1 {
   -webkit-overflow-scrolling: touch;
   scroll-snap-type: x mandatory;
   scroll-padding: 20px;
-
 }
 
 .imgBox img {
@@ -210,7 +207,6 @@ h1 {
   filter: drop-shadow(10px 10px 10px rgb(0 0 0 / 0.5));
   object-fit: cover;
   border-radius: 30px;
-  /* animation: clipPath 5s forwards ease-in-out; */
 }
 
 /* pictures */
@@ -233,6 +229,7 @@ body {
   perspective: 1000px;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
+ 
 }
 
 #drag-container,
@@ -257,6 +254,7 @@ body {
   /* 設置透明的背景顏色 */
   width: 100%;
   height: 300px;
+  
 }
 
 #drag-container img,
@@ -278,6 +276,7 @@ body {
   -webkit-box-shadow: 0 0 8px #fff;
   box-shadow: 0 0 8px #fff;
   -webkit-box-reflect: below 10px linear-gradient(transparent, transparent, #0005);
+  
 }
 
 #drag-container img:hover,
@@ -309,6 +308,7 @@ body {
       farthest-side,
       #9993,
       transparent);
+       
 }
 
 #music-container {
