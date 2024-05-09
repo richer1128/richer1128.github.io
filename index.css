@@ -22,10 +22,10 @@ body {
   padding: 0;
 
 }
- 
+
 ::-webkit-scrollbar {
   display: none;
-  /* 隱藏捲動條 */
+
 }
 
 ::-webkit-scrollbar-button {
@@ -64,21 +64,22 @@ body {
   top: 0;
   left: 0;
   overflow-y: scroll;
-   如果內容高度超出視窗高度，允許垂直滾動 
+
   height: 100vh;
   -webkit-overflow-scrolling: touch;
  
 } */
 .DingCheN {
-  overflow-y: auto; /* 允許垂直滾動 */
-  overflow-x: hidden; /* 禁止水平滾動 */
-  -webkit-overflow-scrolling: touch; /* 啟用滾動優化 */
-  height: 100vh; /* 設置容器高度為全視窗高度 */
-  position: fixed; /* 添加這行 */
-  width: 100%; /* 添加這行 */
-  top: 0; /* 添加這行 */
-  left: 0; /* 添加這行 */
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  height: 100vh;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
 }
+
 h1 {
   font-family: 'Pacifico';
   color: white;
@@ -161,16 +162,16 @@ h1 {
   scroll-snap-align: center;
   flex: 0 0 auto;
   width: 80vw;
-  /* 調整圖片寬度以適應手機螢幕 */
+
   max-width: 400px;
-  /* 設置最大寬度 */
+
   height: auto;
 }
 
 /* ADbox */
 .lineBox {
   width: 100vw;
-  /* min-height: 100vh; */
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -249,9 +250,9 @@ body {
   -webkit-transform: rotateX(-10deg);
   transform: rotateX(-10deg);
   background-image: none;
-  /* 移除背景圖片 */
+
   background-color: rgba(0, 0, 0, 0);
-  /* 設置透明的背景顏色 */
+
   width: 100%;
   height: 300px;
   margin-top: 50px;
@@ -262,9 +263,7 @@ body {
 #drag-container img,
 #drag-container video {
   background-image: none;
-  /* 移除背景圖片 */
   background-color: rgba(0, 0, 0, 0);
-  /* 設置透明的背景顏色 */
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   position: absolute;
@@ -279,7 +278,6 @@ body {
   -webkit-box-shadow: 0 0 10px #fff;
   box-shadow: 0 0 10px #fff;
   -webkit-box-reflect: below 10px linear-gradient(transparent, transparent, #0005);
-
 }
 
 #drag-container img:hover,
@@ -375,7 +373,6 @@ body {
 
   #drag-container img {
     max-width: 300px;
-    /* 在手機上縮小圖片 */
   }
 
   .server h1 {
