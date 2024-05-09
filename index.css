@@ -3,7 +3,6 @@
 }
 
 * {
-
   background: #000;
   background-size: cover;
   background-repeat: no-repeat;
@@ -16,14 +15,12 @@
   font-style: normal;
   font-family: "Noto Sans HK", sans-serif;
   font-optical-sizing: auto;
-
 }
 
 body {
   margin: 0;
   padding: 0;
-  overflow-X: hidden;
-  touch-action: none;
+
 }
  
 ::-webkit-scrollbar {
@@ -61,18 +58,27 @@ body {
 
 }
 
-.DingCheN {
+/* .DingCheN {
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
-  overflow-y: auto;
-  /* 如果內容高度超出視窗高度，允許垂直滾動 */
+  overflow-y: scroll;
+   如果內容高度超出視窗高度，允許垂直滾動 
   height: 100vh;
   -webkit-overflow-scrolling: touch;
-  /* 啟用滾動優化 */
+ 
+} */
+.DingCheN {
+  overflow-y: auto; /* 允許垂直滾動 */
+  overflow-x: hidden; /* 禁止水平滾動 */
+  -webkit-overflow-scrolling: touch; /* 啟用滾動優化 */
+  height: 100vh; /* 設置容器高度為全視窗高度 */
+  position: fixed; /* 添加這行 */
+  width: 100%; /* 添加這行 */
+  top: 0; /* 添加這行 */
+  left: 0; /* 添加這行 */
 }
-
 h1 {
   font-family: 'Pacifico';
   color: white;
@@ -100,13 +106,9 @@ h1 {
 
 .logo img {
   width: 100%;
-  /* 讓圖片寬度填滿容器 */
   max-width: 390px;
-  /* 設定最大寬度 */
   height: auto;
-  /* 讓高度自適應 */
   margin: 0 auto;
-  /* 使用 margin 屬性來水平置中 */
 }
 
 .software {
