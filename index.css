@@ -101,7 +101,9 @@ h1 {
   margin: 0 auto;
   /* 使用 margin 屬性來水平置中 */
 }
-
+.software{
+  margin-top: 20px;
+}
 
 
 .software img {
@@ -113,29 +115,13 @@ h1 {
 /* LINE */
 .lineBox {
   width: 100vw;
-
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 15px;
 }
 
-/* .imgBox {
-  display: flex;
- 
-  box-shadow: 0 3px 10px 0 rgba(0 0 0 / 0.1);
-  border-radius: 5px;
-  padding: 10px;
-  width: 640px;
-  position: relative;
-  scroll-behavior: smooth;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  scroll-snap-type: x mandatory;
-  scroll-padding: 20px;
-  -webkit-overflow-scrolling: touch; 
-  scroll-snap-type: x mandatory;  
-} */
+
 .imgBox {
   display: flex;
   gap: 15px;
@@ -150,10 +136,6 @@ h1 {
   scroll-snap-type: x mandatory; /* 添加這行 */
   scroll-padding: 20px;
 }
-
-
-
-
 
 
 
@@ -254,7 +236,8 @@ body {
   /* 設置透明的背景顏色 */
   width: 100%;
   height: 300px;
-  
+  margin-top: 50px;
+  margin-bottom: 100px;
 }
 
 #drag-container img,
