@@ -23,6 +23,8 @@
 body {
   margin: 0;
   padding: 0;
+  overflow: hidden;
+  touch-action: none;
 }
 
 ::-webkit-scrollbar {
@@ -66,7 +68,7 @@ body {
   left: 0;
   overflow-y: auto; /* 如果內容高度超出視窗高度，允許垂直滾動 */
   height: 100vh;
-  touch-action: none;
+  -webkit-overflow-scrolling: touch; /* 啟用滾動優化 */
 }
 
 h1 {
@@ -135,11 +137,12 @@ h1 {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch; /* 添加這行 */
   scroll-snap-type: x mandatory; /* 添加這行 */
-  
   scroll-padding: 1rem;
 }
 
-
+::-webkit-scrollbar {
+  display: none; /* 隱藏捲動條 */
+}
 
 .imgBox img {
   border-radius: 4px;
