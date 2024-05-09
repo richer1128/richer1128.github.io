@@ -64,8 +64,8 @@ body {
   width: 100%;
   top: 0;
   left: 0;
-  overflow-y: scroll; /* 如果內容高度超出視窗高度，允許垂直滾動 */
-  height: 100vh; 
+  overflow-y: auto; /* 如果內容高度超出視窗高度，允許垂直滾動 */
+  height: 100vh
 }
 
 h1 {
