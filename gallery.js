@@ -17,7 +17,22 @@ var aEle = [...aImg, ...aVid]; // combine 2 arrays
 // Size of images
 ospin.style.width = imgWidth + "px";
 ospin.style.height = imgHeight + "px";
+var isDragging = false;
 
+document.getElementById("drag-container").addEventListener("pointerdown", function(event) {
+  isDragging = true;
+});
+
+document.addEventListener("pointermove", function(event) {
+  if (isDragging) {
+    event.preventDefault();
+  }
+});
+
+document.addEventListener("pointerup", function(event) {
+  isDragging = false;
+});
+        
 // Size of ground - depend on radius
 var ground = document.getElementById("ground");
 ground.style.width = radius * 3 + "px";
